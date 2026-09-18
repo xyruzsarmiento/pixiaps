@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#09090c" />
+  <meta name="theme-color" content="#fff8fc" />
   <meta name="description" content="Pixia is a community-driven Growtopia private server with custom systems, live events, and cross-platform support." />
   <title>Pixia — A different kind of Growtopia private server</title>
 
@@ -14,22 +14,22 @@
 
   <style>
     :root {
-      --bg: #09090c;
-      --bg-soft: #111117;
-      --surface: #15151c;
-      --surface-2: #1b1b24;
-      --line: rgba(255,255,255,.09);
-      --line-strong: rgba(255,255,255,.16);
-      --text: #f6f4fb;
-      --muted: #9b98a6;
-      --muted-2: #716e7b;
-      --purple: #ff3bbf;
-      --purple-2: #d91b93;
-      --purple-soft: rgba(255,59,191,.12);
-      --green: #71e6ae;
-      --green-soft: rgba(113,230,174,.12);
-      --danger: #ff7f97;
-      --shadow: 0 24px 80px rgba(0,0,0,.35);
+      --bg: #fff8fc;
+      --bg-soft: #fff1f7;
+      --surface: #ffffff;
+      --surface-2: #ffedf7;
+      --line: rgba(197, 24, 124, .11);
+      --line-strong: rgba(197, 24, 124, .20);
+      --text: #25141f;
+      --muted: #705d69;
+      --muted-2: #9a8491;
+      --purple: #ff2bb5;
+      --purple-2: #d8178b;
+      --purple-soft: rgba(255,43,181,.10);
+      --green: #169b64;
+      --green-soft: rgba(22,155,100,.10);
+      --danger: #e93772;
+      --shadow: 0 24px 80px rgba(156, 28, 101, .12);
       --radius-lg: 28px;
       --radius-md: 20px;
       --radius-sm: 14px;
@@ -42,8 +42,8 @@
       margin: 0;
       min-height: 100vh;
       background:
-        radial-gradient(circle at 85% 8%, rgba(217,27,147,.15), transparent 25rem),
-        radial-gradient(circle at 8% 34%, rgba(255,59,191,.07), transparent 30rem),
+        radial-gradient(circle at 85% 8%, rgba(255,43,181,.13), transparent 25rem),
+        radial-gradient(circle at 8% 34%, rgba(255,145,210,.13), transparent 30rem),
         var(--bg);
       color: var(--text);
       font-family: "Manrope", sans-serif;
@@ -51,7 +51,7 @@
       overflow-x: hidden;
     }
 
-    ::selection { background: var(--purple); color: #09090c; }
+    ::selection { background: var(--purple); color: #ffffff; }
     a { color: inherit; }
     button, input, textarea, select { font: inherit; }
 
@@ -69,7 +69,7 @@
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      color: #c6c2ce;
+      color: #8d7081;
       font: 500 .74rem/1 "DM Mono", monospace;
       text-transform: uppercase;
       letter-spacing: .12em;
@@ -125,7 +125,7 @@
     }
 
     .site-header.scrolled {
-      background: rgba(9,9,12,.82);
+      background: rgba(255,248,252,.88);
       border-color: var(--line);
       backdrop-filter: blur(18px);
     }
@@ -173,7 +173,7 @@
     }
 
     .nav-links a {
-      color: #aaa6b3;
+      color: #735e6a;
       text-decoration: none;
       font-size: .88rem;
       font-weight: 600;
@@ -197,8 +197,8 @@
 
     .nav-cta {
       padding: 10px 16px;
-      background: #f3effa;
-      color: #111116 !important;
+      background: var(--purple);
+      color: #ffffff !important;
       font-size: .82rem !important;
       font-weight: 800 !important;
     }
@@ -233,7 +233,7 @@
       right: -1.5vw;
       bottom: -8vw;
       z-index: -1;
-      color: rgba(255,255,255,.018);
+      color: rgba(255,43,181,.05);
       font-size: clamp(11rem, 27vw, 31rem);
       line-height: .72;
       font-weight: 800;
@@ -265,7 +265,7 @@
     .hero-copy > p {
       max-width: 650px;
       margin: 0;
-      color: #aaa6b4;
+      color: #705d69;
       font-size: clamp(1rem, 2vw, 1.16rem);
       line-height: 1.72;
     }
@@ -286,12 +286,12 @@
 
     .btn-primary {
       background: var(--purple);
-      color: #120f16;
+      color: #ffffff;
       box-shadow: 0 14px 34px rgba(255,59,191,.18);
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,.035);
+      background: #ffffff;
       border-color: var(--line-strong);
       color: var(--text);
     }
@@ -318,8 +318,8 @@
       border: 1px solid var(--line-strong);
       border-radius: var(--radius-lg);
       background:
-        linear-gradient(180deg, rgba(255,255,255,.035), transparent 35%),
-        rgba(17,17,23,.9);
+        linear-gradient(180deg, rgba(255,43,181,.055), transparent 35%),
+        rgba(255,255,255,.96);
       box-shadow: var(--shadow);
       overflow: hidden;
       transform: rotate(1.2deg);
@@ -337,7 +337,7 @@
     .console-dots { display: flex; gap: 7px; }
     .console-dots span {
       width: 8px; height: 8px; border-radius: 50%;
-      background: #353440;
+      background: #d8c8d1;
     }
     .console-dots span:first-child { background: var(--purple); }
     .console-label {
@@ -363,7 +363,7 @@
       display: flex;
       align-items: center;
       gap: 11px;
-      color: #cbc8d2;
+      color: #624d59;
       font: 500 .76rem/1 "DM Mono", monospace;
       text-transform: uppercase;
       letter-spacing: .08em;
@@ -431,7 +431,7 @@
     .signal-bar {
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
-      background: rgba(255,255,255,.018);
+      background: rgba(255,43,181,.025);
     }
 
     .signal-grid {
@@ -485,7 +485,7 @@
       gap: 14px;
       border: 1px solid var(--line);
       border-radius: 16px;
-      background: rgba(255,255,255,.018);
+      background: rgba(255,43,181,.025);
       color: var(--text);
       text-align: left;
       cursor: pointer;
@@ -529,7 +529,7 @@
       padding: 30px;
       border-bottom: 1px solid var(--line);
       background:
-        radial-gradient(circle at 85% 0%, rgba(255,59,191,.16), transparent 18rem),
+        radial-gradient(circle at 85% 0%, rgba(255,43,181,.14), transparent 18rem),
         rgba(255,255,255,.012);
     }
 
@@ -585,9 +585,9 @@
       margin-top: 12px;
       padding: 13px 15px;
       border-radius: 12px;
-      border: 1px solid rgba(255,59,191,.2);
-      background: #0d0d12;
-      color: #ffc4ea;
+      border: 1px solid rgba(216,23,139,.18);
+      background: #fff0f7;
+      color: #b80f78;
       font: 500 .72rem/1.65 "DM Mono", monospace;
       overflow-wrap: anywhere;
       white-space: pre-wrap;
@@ -605,7 +605,7 @@
       padding: 26px;
       border-radius: var(--radius-md);
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.018);
+      background: rgba(255,43,181,.025);
       position: relative;
       overflow: hidden;
       transition: transform .2s ease, background .2s ease, border-color .2s ease;
@@ -627,8 +627,8 @@
       position: absolute;
       right: 20px;
       top: 16px;
-      color: rgba(255,59,191,.34);
-      text-shadow: 0 0 28px rgba(255,59,191,.08);
+      color: rgba(216,23,139,.48);
+      text-shadow: 0 0 28px rgba(255,43,181,.09);
       font: 500 3rem/1 "DM Mono", monospace;
     }
 
@@ -746,8 +746,8 @@
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at 85% 15%, rgba(255,59,191,.18), transparent 18rem),
-        linear-gradient(155deg, rgba(255,255,255,.045), rgba(255,255,255,.012)),
+        radial-gradient(circle at 85% 15%, rgba(255,43,181,.13), transparent 18rem),
+        linear-gradient(155deg, rgba(255,43,181,.035), rgba(255,255,255,.92)),
         var(--surface);
       box-shadow: var(--shadow);
       display: flex;
@@ -760,7 +760,7 @@
       position: absolute;
       right: -10px;
       bottom: -42px;
-      color: rgba(255,59,191,.08);
+      color: rgba(216,23,139,.09);
       font: 500 clamp(8rem, 18vw, 15rem)/1 "DM Mono", monospace;
       pointer-events: none;
     }
@@ -771,10 +771,10 @@
       width: fit-content;
       gap: 8px;
       padding: 8px 11px;
-      border: 1px solid rgba(255,59,191,.2);
+      border: 1px solid rgba(216,23,139,.18);
       border-radius: 999px;
-      background: rgba(255,59,191,.08);
-      color: #ffd0ef;
+      background: rgba(255,43,181,.08);
+      color: #b80f78;
       font: 500 .66rem/1 "DM Mono", monospace;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -820,8 +820,8 @@
       border: 1px solid var(--line);
       border-radius: 22px;
       background:
-        linear-gradient(160deg, rgba(255,255,255,.028), rgba(255,255,255,.008)),
-        #101015;
+        linear-gradient(160deg, rgba(255,43,181,.035), rgba(255,255,255,.96)),
+        #ffffff;
       position: relative;
       overflow: hidden;
       transition: transform .22s ease, border-color .22s ease, background .22s ease;
@@ -829,7 +829,7 @@
 
     .team-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(255,59,191,.35);
+      border-color: rgba(216,23,139,.32);
       background: var(--surface);
     }
 
@@ -841,7 +841,7 @@
       right: -55px;
       top: -55px;
       border-radius: 50%;
-      background: rgba(255,59,191,.08);
+      background: rgba(255,43,181,.08);
       filter: blur(2px);
     }
 
@@ -878,12 +878,12 @@
       overflow: hidden;
       min-height: 430px;
       padding: 52px;
-      border: 1px solid rgba(255,59,191,.26);
+      border: 1px solid rgba(216,23,139,.22);
       border-radius: 34px;
       background:
-        radial-gradient(circle at 78% 30%, rgba(255,59,191,.24), transparent 19rem),
-        radial-gradient(circle at 15% 100%, rgba(217,27,147,.12), transparent 24rem),
-        linear-gradient(145deg, #15151d, #101014 72%);
+        radial-gradient(circle at 78% 30%, rgba(255,43,181,.14), transparent 19rem),
+        radial-gradient(circle at 15% 100%, rgba(216,23,139,.08), transparent 24rem),
+        linear-gradient(145deg, #ffffff, #fff4fa 72%);
       box-shadow: var(--shadow);
       display: grid;
       grid-template-columns: 1fr minmax(300px, .6fr);
@@ -895,7 +895,7 @@
       content: "";
       position: absolute;
       inset: 18px;
-      border: 1px solid rgba(255,255,255,.035);
+      border: 1px solid rgba(216,23,139,.07);
       border-radius: 24px;
       pointer-events: none;
     }
@@ -926,9 +926,9 @@
       z-index: 1;
       min-height: 286px;
       padding: 26px;
-      border: 1px solid rgba(255,255,255,.11);
+      border: 1px solid rgba(216,23,139,.14);
       border-radius: 26px;
-      background: rgba(9,9,12,.58);
+      background: rgba(255,255,255,.82);
       backdrop-filter: blur(12px);
       display: flex;
       flex-direction: column;
@@ -942,9 +942,9 @@
       display: grid;
       place-items: center;
       background: var(--purple);
-      color: #120f16;
+      color: #ffffff;
       font-size: 1.55rem;
-      box-shadow: 0 14px 32px rgba(255,59,191,.22);
+      box-shadow: 0 14px 32px rgba(255,43,181,.20);
     }
 
     .discord-panel h3 {
@@ -1015,7 +1015,7 @@
         flex-direction: column;
         align-items: stretch;
         gap: 6px;
-        background: rgba(17,17,23,.98);
+        background: rgba(255,255,255,.98);
         border: 1px solid var(--line-strong);
         border-radius: 18px;
         box-shadow: var(--shadow);
